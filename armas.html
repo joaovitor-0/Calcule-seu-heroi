@@ -1,0 +1,155 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Calcule seu herói</title>
+		<meta charset='UTF-8'>
+		<link rel='stylesheet' href='style.css'>
+		<link rel='icon' href='icon.ico'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+<body>
+	<header>
+	    <div id='box'><p id='titulo'><img src='logo.png' id='logo'/>Calcule seu herói</p></div>  
+		<nav>
+				<a href='index.html'>ATRIBUTOS/ARMADURA</a>
+				<a href='armas.html'>ARMAS</a>
+				<a href='problemas.html'>REPORTAR PROBLEMAS</a>
+		</nav>
+	</header>
+	
+	<h1>Cálculo de dano</h1><img src='dano.png' id='imgdano'/>
+	
+	<section>
+		<div id='container'>
+			<div id='colunaEsquerda'>
+				<div class='quadrado' id='atributosAtuais'>
+					<h2>Atributos Atuais</h2>
+					
+					<div class='atributos'>
+						<label for='saude'>Saúde</label>
+						<input type='number' id='saude' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='mente'>Mente</label>
+						<input type='number' id='mente' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='vigor'>Vigor</label>
+						<input type='number' id='vigor' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='forca'>Força</label>
+						<input type='number' id='forca' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='destreza'>Destreza</label>
+						<input type='number' id='destreza' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='inteligencia'>Inteligência</label>
+						<input type='number' id='inteligencia' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='fe'>Fé</label>
+						<input type='number' id='fe' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='arcano'>Arcano</label>
+						<input type='number' id='arcano' value='10' min='10' max='99'>
+					</div>
+					
+					<div class = 'quadrado' id='levelTotal'>
+						<label>Level Total</label>
+						<label id='level'>1</label>
+					</div>
+				
+					<div class = 'quadrado' id='resetarAtributos'>
+						<button id='reset'>Resetar atributos</button>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<div id='colunaDireita'>
+				<div class='quadrado' id='armaduras'>
+					<h2>Armas</h2>
+					
+					<div class='atributos'>
+						<label>Arma Primária</label>
+						<select id='arma1'>
+							<option value='nenhuma'>Nenhuma Armas</option>
+							<option value='parryingDagger'>Parrying Dagger</option>
+							<option value='espadaLonga'>Espada Longa</option>
+							<option value='cajadoMago'>Cajado de Mago</option>
+							<option value='lancaSagrada'>Lança Sagrada</option>
+							<option value='adagaArcana'>Adaga Arcana</option>
+						</select>
+					</div>
+					
+					<div class='totalAR' class='atributos'>
+						<label>Total AR</label>
+						<span id='danoArma1'>0</span>
+					</div>
+					
+					<br>
+					
+					<div class='atributos'>
+						<label>Arma Secundária</label>
+						<select id='arma2'>
+							<option value='nenhuma'>Nenhuma Armas</option>
+							<option value='parryingDagger'>Parrying Dagger</option>
+							<option value='espadaLonga'>Espada Longa</option>
+							<option value='cajadoMago'>Cajado de Mago</option>
+							<option value='lancaSagrada'>Lança Sagrada</option>
+							<option value='adagaArcana'>Adaga Arcana</option>
+						</select>
+					</div>
+					
+					<div class='totalAR' class='atributos'>
+						<label>Total AR</label>
+						<span id='danoArma2'>0</span>
+					</div>
+					
+					<br>
+					
+					<div class='atributos'>
+						<label>Arma Terceária</label>
+						<select id='arma3'>
+							<option value='nenhuma'>Nenhuma Armas</option>
+							<option value='parryingDagger'>Parrying Dagger</option>
+							<option value='espadaLonga'>Espada Longa</option>
+							<option value='cajadoMago'>Cajado de Mago</option>
+							<option value='lancaSagrada'>Lança Sagrada</option>
+							<option value='adagaArcana'>Adaga Arcana</option>
+						</select>
+					</div>
+					
+					<div class='totalAR' class='atributos'>
+						<label>Total AR</label>
+						<span id='danoArma3'>0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	<footer>
+		<p>&copy; 2025. Calcule seu herói. Todos os direitos reservados a Beatriz Vazquez Santarém e João Vitor Jardim Rocha.</p>
+	</footer>
+	
+	<script src='script.js'></script>
+</body>
+</html>

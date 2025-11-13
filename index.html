@@ -1,0 +1,218 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Calcule seu herói</title>
+		<meta charset='UTF-8'>
+		<link rel='stylesheet' href='style.css'>
+		<link rel='icon' href='icon.ico'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+<body>
+
+	<header>
+	    <div id='box'><p id='titulo'><img src='logo.png' id='logo'/>Calcule seu herói</p></div>  
+		<nav>
+				<a href='index.html'>ATRIBUTOS/ARMADURA</a>
+				<a href='armas.html'>ARMAS</a>
+				<a href='problemas.html'>REPORTAR PROBLEMAS</a>
+		</nav>
+	</header>
+	
+	<h1>Atributos/Armadura</h1><img src='armadura.png' id='imgarm'/>
+	
+	<section>
+		<div id='container'>
+			<div id='colunaEsquerda'>
+				<div class='quadrado' id='atributosAtuais'>
+					<h2>Atributos Atuais</h2>
+					
+					<div class='atributos'>
+						<label for='saude'>Saúde</label>
+						<input type='number' id='saude' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='mente'>Mente</label>
+						<input type='number' id='mente' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='vigor'>Vigor</label>
+						<input type='number' id='vigor' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='forca'>Força</label>
+						<input type='number' id='forca' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='destreza'>Destreza</label>
+						<input type='number' id='destreza' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='inteligencia'>Inteligência</label>
+						<input type='number' id='inteligencia' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='fe'>Fé</label>
+						<input type='number' id='fe' value='10' min='10' max='99'>
+					</div>
+					
+					<div class='atributos'>
+						<label for='arcano'>Arcano</label>
+						<input type='number' id='arcano' value='10' min='10' max='99'>
+					</div>
+				
+				</div>
+				
+				<div class='quadrado' id='atributosTotais'>
+					<h2>Atributos Totais</h2>
+			<table>	
+			        <tr>
+						<td><label>Saúde</label></td> 
+						<td><span id='totalSaude'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Mente</label></td>
+						<td><span id='totalMente'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Vigor</label></td>
+						<td><span id='totalVigor'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Força</label></td>
+						<td><span id='totalForca'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Destreza</label></td>
+						<td><span id='totalDestreza'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Inteligência</label></td>
+						<td><span id='totalInteligencia'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Fé</label></td>
+						<td><span id='totalFe'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Arcano</label></td>
+						<td><span id='totalArcano'>0</span></td>
+					</tr>
+			</table>
+				</div>
+			
+				
+				
+				<div class = 'quadrado' id='levelTotal'>
+					<label>Level Total</label>
+					<label id='level'>1</label>
+				</div>
+				
+				<div class = 'quadrado' id='resetarAtributos'>
+					<button id='reset'>Resetar atributos</button>
+				</div>
+					
+			</div>
+			
+			<div id='colunaDireita'>
+				<div class='quadrado' id='armaduras'>
+					<h2>Armaduras</h2>
+					<label>Conjunto de Armaduras</label>
+					<select id='selecioneArmadura'>
+						<option value='nenhuma'>Sem Armadura</option>
+						<option value='cavaleiro'>Cavaleiro Pesado (+Vigor +Força, -Destreza)</option>
+						<option value='assassino'>Assassino Leve (+Destreza +Vigor, -Saúde)</option>
+						<option value='mago'>Mago (+Inteligência +Mente, -Vigor)</option>
+						<option value='profeta'>Profeta (+Fé +Mente, -Força)</option>
+						<option value='cacador'>Caçador (+Destreza +Arcano, -Mente)</option>
+					</select>
+				</div>
+			
+				<div class='quadrado' id='estatisticasBuild'>
+					<h2>Estatísticas da Build</h2>
+				
+                <table>				
+					<tr>
+						<td><label>HP</label></td>
+						<td><span id='hp'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>FP</label></td>
+						<td><span id='fp'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Estamina</label></td>
+						<td><span id='estamina'>0</span></td>
+					</tr>
+					
+					<tr>
+						<td><label>Equilíbrio</label></td>
+						<td><span id='equilibrio'>0</span></td>
+					</tr>
+				</div>
+				
+				<div class='quadrado' id='defesas'>
+					<div class='par'>
+						<tr>
+							<td><label>Def. Fis.</label></td>
+							<td><span id='defFisica'>0</span></td>
+						</tr>
+						
+						<tr>
+							<td><label>Def. mag.</label></td>
+							<td><span id='defMagica'>0</span></td>
+						</tr>
+						
+						<tr>
+							<td><label>Def. Fogo</label></td>
+							<td><span id='defFogo'>0</span></td>
+						</tr>
+						
+						<tr>
+							<td><label>Def. Raio</label></td>
+							<td><span id='defRaio'>0</span></td>
+						</tr>
+						
+						<tr>
+							<td><label>Def. Sag.</label></td>
+							<td><span id='defSagrada'>0</span></td>
+						</tr>
+						
+                        <tr>
+							<td><label>Def. Arcana</label></td>
+							<td><span id='defArcana'>0</span></td>
+						</tr>
+				</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div id='respfooter'></div>
+	<footer>
+		<p>&copy; 2025. Calcule seu herói. Todos os direitos reservados a Beatriz Vazquez Santarém e João Vitor Jardim Rocha.</p>
+	</footer>
+	
+
+<script src='script.js'></script>
+</body>
+</html>
